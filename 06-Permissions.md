@@ -152,7 +152,9 @@ chmod a+r,u+w public.txt    # plusieurs modifications à la fois
 
 1. `rw-r-----` = 640 ; 751 = `rwxr-x--x`.
 2. 666 − 077 = 600 : `rw-------`.
-3. ```bash
+3. Création, droit d'exécution et lancement :
+
+   ```bash
    echo 'echo Bonjour' > bonjour.sh
    chmod u+x bonjour.sh
    ./bonjour.sh
